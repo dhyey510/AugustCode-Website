@@ -1,0 +1,23 @@
+@media screen and (max-width: 767px) {
+  .right-side {
+    padding: 2% 0px;
+    text-align: center;
+  }
+  .right-side p {
+    text-align: center;
+    width: 100%;
+    padding: 0px 3%;
+    font-size: 12px;
+  }
+  .hr-light {
+    margin: 0px auto;
+    width: 20%;
+  }
+  .container > p {
+    width: 100%;
+    margin: 10% auto;
+  }
+  .container hr {
+    width: 40%;
+  }
+}
