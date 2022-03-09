@@ -5,106 +5,119 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="https://kit.fontawesome.com/39de285129.js" crossorigin="anonymous"></script>
+   <title>Responsive Navbar</title>
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
    <link rel="stylesheet" href="style.css">
-   <title>Document</title>
 </head>
 
-<!-- hello -->
-
 <body>
-   <!-- Navbar -->
-   <nav class="navbar navbar-expand-md navbar-light bg-light">
-      <a href="#" class="navbar-brand ps-3"><img class="img-fluid" style="width: 120px; height: 30px;" src="Nav Logo_black 1.png" alt=""></a>
-      <button class="navbar-toggler">
-         <span class="navbar-toggler-icon" data-bs-toggle="collapse" data-bs-target="#navbarMenu"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarMenu">
-         <ul class="navbar-nav ">
-            <li class="nav-item me-3">
-               <a href="#" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item me-3">
-               <a href="#" class="nav-link">About</a>
-            </li>
-            <li class="nav-item me-3">
-               <a href="#" class="nav-link">Solutions</a>
-            </li>
-            <li class="nav-item me-3">
-               <a href="#" class="nav-link">Blog</a>
-            </li>
-            <li class="nav-item me-3">
-               <a href="#" class="nav-link">Tesimonials</a>
-            </li>
-            <li class="nav-item me-3">
-               <a href="#" class="nav-link">Contact</a>
-            </li>
-         </ul>
+
+   <!-- Header -->
+   <header class="header" id="header">
+      <a href="#header" class="logo"><img src="Nav Logo_black 1.png" alt=""></a>
+
+
+      <nav class="navbar">
+         <a href="#header">Home</a>
+         <a href="#services">Solutions</a>
+         <a href="#about">About us</a>
+         <a href="#contact">Contact</a>
+         <a href="#contact">Blog</a>
+
+      </nav>
+
+      <div id="menu-btn" class="fa-solid fa-bars fa-2x">
       </div>
-   </nav>
+   </header>
+   <!-- Newsletter -->
+
    <!-- Footer -->
-   <div style="background-color: #078CCC ;">
-      <div class="container px-5">
-         <div class="row py-5">
-            <div class="col-md-4 text-center pb-md-0 pb-3">
-               <img src="cil_burger.png" style="width: 40px; height: 40px;" alt="">
-            </div>
-            <div class="col-md-8 heading text-center">
-               Ready to get started?
-               <button type="button" class="btn btn1 btn-light ms-md-4">Get Started</button>
-            </div>
-         </div>
-         <div class="row">
-            <div class="col-md-6 col-12 newsletter">
-               Subscribe To Our Newsletter
-               <div class="input-group my-3">
-                  <input type="text" class="form-control" placeholder="Your email" aria-label="Recipient's username"
-                     aria-describedby="basic-addon2">
-                  <div class="input-group-append">
-                     <button class="btn btn-outline-secondary btn2" type="button">Subscribe</button>
+   <footer>
+      <div style="background-color: #078CCC ;">
+         <section>
+            <div class="container px-5">
+               <div class="row ">
+                  <div class=" col-12 newsletter ">
+                     <div style="font-size: 35px;" class="text-center">Subscribe To Our Newsletter</div>
+                     <div class="input-group my-3 ">
+                        <input type="text" class="form-control" placeholder="Your email"
+                           aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                           <button class="btn btn-outline-secondary btn2" type="button">Subscribe</button>
+                        </div>
+                     </div>
                   </div>
                </div>
+               <hr>
             </div>
-            <div class="col-md-2 col-4 text-center aboutSection">
-               <h5>Serveices</h5>
-               <p>Email</p>
-               <p>Campaings</p>
-               <p>Bonding</p>
-               <p>Offline</p>
+
+
+         </section>
+         <div class="container px-5">
+            <!-- <div class="row py-5">
+               <div class="col-md-4 text-center pb-md-0 pb-3">
+                  <img src="Nav Logo_black 1.png" style="width: 200px; height: 40px; color: white;" alt="">
+               </div>
+               <div class="col-md-8 heading text-center">
+                  Ready to get started?
+                  <button type="button" class="btn btn1 btn-light ms-md-4">Get Started</button>
+               </div>
+            </div> -->
+            <div class="row">
+               <div class="col-md-3 m-md-0 my-5 col-6 text-center aboutSection" style="font-size: 50px;">
+                  <h5>Serveices</h5>
+                  <p>Email</p>
+                  <p>Campaings</p>
+                  <p>Bonding</p>
+                  <p>Offline</p>
+               </div>
+               <div class="col-md-3 m-md-0 my-5 col-6 text-center aboutSection">
+                  <h5>About</h5>
+                  <p>Our Story</p>
+                  <p>Benefits</p>
+                  <p>Team</p>
+                  <p>Career</p>
+               </div>
+               <div class="col-md-3 m-md-0 my-5 col-6 text-center aboutSection">
+                  <h5>Help</h5>
+                  <p>FAQ</p>
+                  <p>Contact Us</p>
+               </div>
+               <div class="col-md-3 m-md-0 my-5 col-6 text-center aboutSection">
+                  <h5>Get in touch</h5>
+                  <p><i class="fa-solid fa-phone"></i> <a href="tel:555-555-5555"
+                        style="text-decoration: none; color: rgb(231, 231, 231);">555-555-5555</a>
+                  </p>
+                  <p><i class="fa-solid fa-at"></i> <a href="mailto:abc@gmail.com"
+                        style="text-decoration: none; color: rgb(231, 231, 231);">abc@gmail.com</a></p>
+               </div>
             </div>
-            <div class="col-md-2 col-4 text-center aboutSection">
-               <h5>About</h5>
-               <p>Our Story</p>
-               <p>Benefits</p>
-               <p>Team</p>
-               <p>Career</p>
-            </div>
-            <div class="col-md-2 col-4 text-center aboutSection">
-               <h5>Help</h5>
-               <p>FAQ</p>
-               <p>Contact Us</p>
-            </div>
-         </div>
-         <hr>
-         <div class="row mt-5 pb-5">
-            <div class="col-4 lastCol text-center">
-               Terms and conditions
-            </div>
-            <div class="col-md-4 col-2 lastCol">
-               Privacy Policy
-            </div>
-            <div class="col-md-4 col-6 text-center lastCol">
-               <img src="bx_bxl-facebook.png" class="me-md-4 me-sm-2" height="25px" width="25px" alt="">
-               <img src="Group.png" height="25px" class="me-md-4 me-sm-2 " width="25px" alt="">
-               <img src="Vector.png" height="25px" width="25px" alt="">
+            <hr>
+            <div class="row mt-5 pb-5">
+               <div class="col-4 lastCol text-center">
+                  Terms and conditions
+               </div>
+               <div class="col-md-4 col-2 lastCol">
+                  Privacy Policy
+               </div>
+               <div class="col-md-4 col-6 text-center lastCol">
+                  <img src="bx_bxl-facebook.png" class="me-md-4 me-sm-2" height="29px" width="29px" alt="">
+                  <img src="Group.png" height="25px" class="me-md-4 me-sm-2 " width="25px" alt="">
+                  <img src="Vector.png" height="25px" width="25px" alt="">
+               </div>
             </div>
          </div>
       </div>
-   </div>
+   </footer>
+
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"></script>
+   <script src="script.js"></script>
+   <script src="https://kit.fontawesome.com/d7f892dd3f.js" crossorigin="anonymous"></script>
+
 </body>
 
 </html>

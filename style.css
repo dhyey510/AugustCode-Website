@@ -1,3 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  list-style: none;
+  font-family: 'Arvo', serif;
+  transition: all .3s linear;
+}
+
+html {
+  font-size: 100%;
+  overflow-x: hidden;
+  scroll-padding-top: 5rem;
+  scroll-behavior: smooth;
+} */
+
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #ffffff;
+  padding: 1rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+header .logo {
+  color: #8D99AE;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+header .logo i {
+  color: #EF233C;
+  margin-right: .5rem;
+}
+
+header .navbar a {
+  color: #777676;
+  text-transform: uppercase;
+  font-size: .8rem;
+  border-radius: .5rem;
+  padding: .5rem 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+header .navbar a:hover {
+  color: #078CCC;
+  background: #EDF2F4;
+}
+
+header #menu-btn {
+  display: none;
+  color: #0c0c0c;
+  cursor: pointer;
+}
+
+header #menu-btn:hover {
+  color: #015277;
+  z-index: 100;
+}
+
+@media (max-width: 868px) {
+  
+  header #menu-btn {
+  display: inline-block;
+  z-index: 100;
+}
+  header #menu-btn.fa-times {
+    transform: rotate(180deg);
+  }
+  
+  .header .navbar {
+    position: absolute;
+    top: 0%;
+    left: 0;
+    right: 0;
+    height: 100vh; 
+    background: #078CCC;
+    border-top: 1px solid #8D99AE;
+    padding: 2rem;
+    clip-path: polygon(50% 0%, 50% 0, 50% 0, 50% 0, 50% 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: space-between;
+  }
+  
+  .header .navbar.active {
+    clip-path: polygon(100% 0, 52% 0, 0 0, 0 100%, 100% 100%);
+   
+  }
+  
+  .header .navbar a {
+    display: block;
+    margin: 2rem;
+    text-align: center;
+    font-size: large;
+    color: white;
+  }
+}
+
 .heading{
    color: white;
    font-size: 20px;
@@ -12,18 +124,28 @@
 
 
 .newsletter{
-   color: white;
+   color: rgb(255, 255, 255);
    font-size: 25px;
+}
+
+hr{
+    color: rgb(255, 255, 255);
+    border: 0;
 }
 
 .btn2{
    background-color: #025b85;
    color:white;
-   border-radius: 0px 20px 20px 0px;
+   border-radius: 0px;
    height: 45px;
    border: none;
 
-} 
+}
+
+.input-group{
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
 
 
 .btn2:hover {
@@ -35,15 +157,15 @@
 .aboutSection > h5{
    color: white;
    font-weight: 400;
-   font-size: 17px;
+   font-size: 25px;
    letter-spacing: 1px;
    margin-bottom: 15px;
 }
 
 .aboutSection > p{
    color: rgb(231, 231, 231);
-   font-weight: bold;
-   font-size: 10px;
+   font-weight: semi-bold;
+   font-size: 17px;
    letter-spacing: 1.2px;
 }
 
@@ -62,5 +184,8 @@ hr{
    .navbar-collapse{
       text-align: center;
    }
+   .input-group{
+      padding: 0;
+    }
 }
 
