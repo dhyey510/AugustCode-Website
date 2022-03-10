@@ -24,6 +24,7 @@ p {
   font-weight: 200;
   font-size: 14px;
   text-align: justify;
+  font-weight: 400;
 }
 .hr-light {
   margin: 1% 0px;
@@ -31,11 +32,76 @@ p {
   border: 2px solid var(--secondary-color);
   color: var(--secondary-color);
 }
+.hr-dark {
+  margin: 1% 0px;
+  width: 26%;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+}
 .btn {
   border-radius: 10px;
   border-width: 1px;
   padding: 1% 3%;
   font-size: 14px;
+}
+
+/*
+Hero Section & acquainted section
+*/
+#hero-section .left-side h1 {
+  color: black;
+  font-family: var(--secondary-font);
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+#hero-section .main-section,
+#acquainted .main-section {
+  --bs-gutter-x: 0;
+}
+#hero-section .hero-content,
+#acquainted .hero-content {
+  margin: 0px 100px;
+}
+#hero-section .right-side img,
+#acquainted .right-side img {
+  height: 80%;
+  width: 80%;
+}
+.hero-content p {
+  margin: 5px auto;
+}
+.scroll-icon {
+  text-align: center;
+  color: var(--primary-color);
+  font-size: 20px;
+}
+#acquainted .hero-content p {
+  margin: 40px auto;
+}
+#acquainted .img-background {
+  width: 400px;
+  height: 400px;
+  box-shadow: 0px 10px 20px 10px rgba(227, 229, 232, 0.5);
+  background-image: url("./assets/images/last_gif.gif");
+}
+#acquainted .btn-primary {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  font-family: var(--primary-font);
+  font-weight: bold;
+}
+#acquainted .btn-primary:hover {
+  color: white;
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+#acquainted hr {
+  width: 80%;
+}
+#acquainted {
+  margin: 40px auto;
 }
 
 /* 
@@ -54,7 +120,7 @@ about css
   height: 100%;
 }
 
-.main-section {
+#About .main-section {
   --bs-gutter-x: 0;
   background-color: var(--primary-color);
 }
@@ -82,8 +148,81 @@ solutions
 */
 
 #solution {
+  padding: 5px;
+}
+#solution h1 {
+  color: black;
+  margin: 0% 0% 0.5% 0px;
+}
+#solution p {
+  color: black;
+}
+#solution .card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  cursor: pointer;
+  height: 190px;
+  margin: 20px;
+  padding: 0 20px;
+  position: relative;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.025);
+  text-align: center;
+  transition: height 0.5s;
+  width: 260px;
+}
+#solution .extend {
+  height: 300px;
+}
+#solution .card img {
+  width: 60px;
+  height: 60px;
+  margin: 10px auto;
+}
+#solution .card h3 {
+  width: 70%;
+  text-align: center;
+  margin: 0px auto;
+  font-size: 25px;
+}
+#solution i {
+  position: relative;
+  top: -60px;
+  margin: 0px auto;
+  z-index: 30;
+  transform: rotate(0deg);
+  transition: transfrom 0.5s;
+  color: var(--primary-color);
+  font-family: var(--primary-font);
+  font-weight: bold;
+}
+#solution .extend i {
+  margin: -10px auto;
+  transform: rotate(180deg);
+}
+#solution .card .text-content {
+  position: relative;
+  top: -20px;
   width: 100%;
-  height: 200px;
+  height: 100%;
+  clip-path: inset(70% 0 0 0);
+  transition: clip-path 0.5s;
+}
+#solution .extend .text-content {
+  clip-path: inset(0 0 0 0);
+}
+#solution .card .text p {
+  width: 100%;
+  text-align: center;
+  font-size: 13px;
+  transform: translateY(-110px);
+  transition: transform 0.5s;
+}
+#solution .extend .text p {
+  transform: translateY(35px);
+}
+#solution .card:nth-child(2) {
+  margin-top: 150px;
 }
 
 /* 

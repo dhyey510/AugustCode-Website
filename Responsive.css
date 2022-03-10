@@ -20,4 +20,34 @@
   .container hr {
     width: 40%;
   }
+  #hero-section .left-side h1,
+  #acquainted .left-side h1,
+  .hero-content p {
+    text-align: center;
+  }
+  .hero-content p {
+    margin: 20px auto;
+  }
+  #hero-section .hero-content,
+  #acquainted .hero-content {
+    margin: 0px 40px;
+    /* width: 100%; */
+  }
+  #solution .card:nth-child(2) {
+    margin-top: 20px;
+  }
+  #acquainted button {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #acquainted hr {
+    margin: 0px auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  #solution .card:nth-child(2) {
+    margin-top: 20px;
+  }
 }
