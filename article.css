@@ -1,0 +1,75 @@
+:root {
+	--primary-color: #078ccc;
+	--secondary-color: #b7ddef;
+	--primary-font: "Titillium Web", sans-serif;
+	--secondary-font: "Poppins", sans-serif;
+  }
+
+.title {
+	font-size: 20px;
+	padding-left: 100px;
+	padding-top: 100px;
+	
+}
+.title h1{
+	font-weight: bolder;
+	padding-right: 100px;
+	font-family: var(--primary-font);
+}
+
+.date {
+	font-size: 20px;
+	padding-left: 100px;
+	padding-top: 7px;
+	font-family: var(--primary-font);
+}
+
+.date img{
+	height: 700px;
+	width: 1100px;
+}
+
+.content{
+	padding-left: 100px;
+	font-size: 25px ;
+	padding-right: 100px;
+	font-family: var(--primary-font);
+}
+
+.row{
+	--bs-gutter-x:0;
+  }
+
+.rblog h1{
+	font-weight: bolder;
+	padding-top: 50px;
+	text-align: center;
+	font-family: var(--primary-font);
+}
+
+p.card-text{
+	font-family: var(--primary-font) ;
+	display: block;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	font-weight: bolder;
+	font-size: large;
+  }
+ h6{
+	font-family:var(--primary-font);
+}
+
+.btn{
+	font-family:var(--primary-font);
+  }
+  .card-image{
+	overflow: hidden;
+  }
+  .card-image img{
+	transition: all 1.3s ease;
+  }
+  .card-image:hover img{
+	transform: scale(1.2);
+  }
